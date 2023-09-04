@@ -22,11 +22,12 @@ html {
 .header_nav{
  width: 100%;
  height: 70px;
+ position: static;
 }
 
 
 .nav {
-    position: sticky;
+    /* position: sticky; */
     top: 0px;
     display: flex;
     justify-content: space-between;
@@ -143,7 +144,7 @@ html {
     justify-content: center;
     margin: 2px auto;
     border-bottom: 1px dashed gray;
-    border-radius: 2px;
+    /* border-radius: 2px; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -179,8 +180,8 @@ html {
         background-image: url("../ArchivosImg/man2.jpg");
         background-size: cover;
         background-position: center;
-        width: 350px;
-        height: 350px;
+        width: 360px;
+        height: 360px;
         /* margin: 0 auto; */
         border-radius: 50%;
         border: 5px solid white;
@@ -201,10 +202,12 @@ html {
     .cont_seccion_btn{
         width: 30%;
         height: 10%;
-        margin-top: 10px;
+        margin-top: 30px;
         display: flex;
         align-items: center;
         justify-content: center;
+        /* border: var(--bor); */
+        
     }
     .btns{
         border: none;
@@ -238,7 +241,6 @@ html {
         justify-content: space-around;
     }
     .contenedor_seccion_img{
-        /* border: var(--bor); */
         width: 40%;
         height: 98%;
         
@@ -250,52 +252,45 @@ html {
         height: 88%;
         position: relative;
     }
-    /* .contenedor_about_img{
-        width: 75%;
-        height: 88%;
-        
-    } */
+    
     .About_img{
         position: absolute;
         width: 350px;
         height: 450px;
         object-fit: cover;
         object-position: center;
-        /* border-radius: 4px; */
         box-shadow: var(--shadow) ;
-        left: 16%;
-        top: 30.5%;  
+        left: 15%;
+        top: 23.5%;  
         border: 8px inset gray;
     }
     .contenedor_seccion_about{
-        width: 50%;
+        width: 55%;
         height: 98%;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
         gap: 5px;
-        /* margin: 10px; */
     }
     .cont_seccion_about_titulo_descripcio{
         width: 98%;
-        height: 10%;
-
+        height: 8%;
     }
     .cont_secion_about_texto_descripcion{
         width: 98%;
-        height: 65%;
+        height: 75%;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
     }
     .about_descripcion{
-
+        
     }
     .cont_secion_about_btn{
         width: 98%;
-        height: 15%;
+        height: 12%;
         display: flex;
         align-items: center;
         justify-content:center;
@@ -313,21 +308,51 @@ html {
     }
     .about_contacto{
         width: 98%;
-        height: 40%;
+        height: 50%;
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        flex-direction: column;
+        gap: 4px;
+        
     }
-    .about_lista_ul{
-        margin: 10px;
+    .coteiner_about{
+        width: 98%;
+        height: 85%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 5px;
     }
-    .lista_li{
-        margin-bottom: 10px;
-        text-decoration: none;
-        font-size: 18px;
-        list-style: none;
+    
+    .cont_abou_info_edu{
+        width: 98%;
+        height: 42%;
+    }
+    .titulo_quienSoy{
+        font-size: 22px;
 
     }
-    .fa-user-graduate,.fa-phone,.fa-envelope,.fa-user,.fa-graduation-cap{
-        font-size: 22px;
+   
+    .info_edu_titulo{
+        color: rgb(0, 0, 0);
+        font-weight: 100;
+        font-size: 20px;
+        margin: 5px;
+    }
+    .info_edu_subtitulo{
+       color: gray;
+       font-weight: 100;
+       margin: 3px;
+
+    }
+    .fa-user-graduate{
+        font-size: 16px;
         color: var(--colorBase);
+    }
+    .info_edu_fecha{
+        
     }
 
     /* _______________________________________tercera */
@@ -403,7 +428,7 @@ html {
     .conteiner_proyectos{
         width: 98%;
         height: 88%;
-        border: var(--bor);
+        /* border: var(--bor); */
         display: flex;
         align-items: center;
         justify-content: center;
@@ -411,7 +436,7 @@ html {
         gap: 5px;
     }
     .seccion_proyecto_ul{
-        border: var(--bor);
+        /* border: var(--bor); */
         width: 98%;
         height: 10%;
         display: flex;
@@ -426,7 +451,7 @@ html {
         height: 35px;
     }
     .cont_projecto_trabajos{
-        border: var(--bor);
+        /* border: var(--bor); */
         width: 98%;
         height:88% ;
         display: flex;
@@ -462,13 +487,13 @@ html {
         justify-content: center;
         flex-direction: column;
         font-size: 18px;
-        transition: .6s;
+        transition: all .5s;
         letter-spacing: 2px;
         opacity: 0;
     }
 
     .proyecto_info:hover{
-        transform: translateY(-1px);
+        transform: translateY(-2px);
         opacity: 1;
     }
 
@@ -485,12 +510,182 @@ html {
         width: 120px;
         height: 35px;
         background-color: transparent;
-        border-radius: 8px;
+        border-radius: 15px;
         color: white;
         font-size: 15px;
         cursor: pointer;
     }
     .proyecto_info_btn:hover{
         background-color: var(--colorBase);
+    }
+
+    /* quinta seccion */
+    .quinta_seccion{
+        flex-direction: column;
+    }
+    .container_seccion_quinta{
+        width: 98%;
+        height: 86%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    .cont_seccion_quinta_contacto,.cont_seccion_quinta_form{
+        width: 45%;
+        height: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer_form {
+        width: 80%;
+        padding: 30px;
+        background-color:  whitesmoke ;
+        box-shadow: var(--shadow);
+        padding: 20px;
+        height:89%;
+        border-radius: 4px;
+        margin: 40px auto;
+        color: white;
+        
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .footer_form_titulo,.footer_title_contact {
+        color: var(--colorBase);
+        font-weight: bold;
+        font-size: 35px;
+        border-bottom: 3px solid gray;
+        max-width: max-content;
+    }
+    .form_input,.form_tarea{
+        padding: 10px;
+        border: 1px solid gray;
+        border-radius: 4px;
+        outline: none;
+    }
+    
+    .cont_form_btn{
+        width: 100%;
+        height: 25%;
+        justify-content:center;
+        align-items: center;
+        display: flex;
+    }
+    
+     .footer_btn {
+        width: 95%;
+        border: 2px solid var(--colorBase);
+        
+    }
+     
+    .footer_btn:hover {
+        background-color: var(--colorBase);
+        font-size: 18px;
+    
+    }
+
+    .cont_seccion_quinta_contacto{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .cont_seccion_quinta_informacion{
+        width: 98%;
+        height: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+        border-bottom: 1px solid gray;
+       
+    }
+    .quinta_seccion_titulo_contacto{
+        color: var(--colorBase);
+        margin: 10px;
+        font-size: 21px;
+    }
+    .container_quinta_seccion{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+    }
+    .fa-square-phone,.fa-square-whatsapp,.fa-location-dot,.fa-square-envelope{
+        text-align: center;
+        font-size: 30px;
+        color: gray;
+    }
+    .cont_quinta_info{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .quinta_seccion_info_titulo{
+        font-size: 18px;
+        font-weight: bold;
+        color: black;
+    }
+    .info_texto{
+        font-size: 13px;
+        color: gray;
+    }
+   
+    .cont_seccion_quinta_redes{
+        width: 98%;
+        height: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
 
     }
+    .fa-github,.fa-linkedin,.fa-envelope,.fa-instagram{
+        font-size: 35px;
+        color: var(--colorBase);
+    }
+    
+    /* sexta */
+    .sexta_seccion_footer{
+        height: 30vh;
+        background-color: rgba(245, 245, 245, 0.678);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .cont_derechos_reservados,.conteiner_footer{
+        width: 90%;
+        height: 15%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .info_derecho_reser{
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .conteiner_footer{
+        width: 90%;
+        height: 60%;
+        text-align: center;
+        flex-direction: column;
+    }
+    .titulo_footer{
+        color: rgba(0, 0, 0, 0.377);
+        margin: 10px;
+        font-size: 30px;
+    }
+    .subtitulo_footer{
+        font-size: 15px;
+        color: gainsboro;
+        font-weight: 100;
+    }
+    
